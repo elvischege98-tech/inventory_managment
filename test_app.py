@@ -1,12 +1,10 @@
 import requests
 
-
 BASE_URL = "https://world.openfoodfacts.org/api/v3"
 
 HEADERS = {
     "User-Agent": "InventoryManagementSystem/1.0 (elvis.chege@student.moringaschool.com)"
 }
-
 
 def get_product_by_barcode(barcode):
     url = f"{BASE_URL}/product/{barcode}"
